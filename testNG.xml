@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--可以通过修改这个xml文件来调整case的运行方式-->
+<!--                                线程为2（每次跑2个），通过methods来跑，-->
+<suite name="Default Suite" thread-count="2" parallel="classes">
+  <!--            thread-count设置线程数  parallel：设置 并发 的方式，以方法还是类来跑   -->
+  <test name="seleniumtest">
+    <classes>
+      <class name="com.testng.day1.Demo1">
+
+    <!--
+    <methods>
+            <include name="">    --包含名字的方法，才运行
+            <exclude name="">    --除了哪个方法，其他都运行
+    </methods>
+
+   -->
+      </class> <!-- com.testng.day1.Demo1 -->
+      <class name="com.testng.day1.Demo2">
+      </class>
+    </classes>
+  </test> <!-- seleniumtest -->
+</suite> <!-- Default Suite -->
